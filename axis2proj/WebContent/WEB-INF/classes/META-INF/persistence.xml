@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="axis2proj">
+	    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>ru.test.novoros.art.correct.db.Users</class>
+		<class>ru.test.novoros.art.correct.db.UserRoles</class>
+		<class>ru.test.novoros.art.correct.db.FireNow</class>
+		<class>ru.test.novoros.art.correct.db.Targets</class>
+		<class>ru.test.novoros.art.correct.db.TargetTypes</class>
+		<class>ru.test.novoros.art.correct.db.ReferencePoints</class>		
+		<class>ru.test.novoros.art.correct.db.CoorectorTargets</class>		
+		<class>ru.test.novoros.art.correct.db.Hits</class>
+		<properties>
+			<property name="eclipselink.jdbc.password" value="9045590455"/>
+			<property name="eclipselink.jdbc.user" value="root"/>
+			<property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/testdb01"/>
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+			<property name="eclipselink.logging.level" value="INFO"/>
+		</properties>
+	</persistence-unit>
+</persistence>
