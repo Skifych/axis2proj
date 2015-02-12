@@ -14,6 +14,17 @@ public class CommandLineClient {
 		CommandLineClient main = new CommandLineClient();
 		main.initEntityManager();
 		//createRoles()
+		//em.find(Users.class, "skif");
+		/*
+		 * http://www.javacodegeeks.com/2012/07/ultimate-jpa-queries-and-tips-list-part.html
+		 * 
+		  private static Person findPersonByName(EntityManager em, String name) {
+			Query query = em.createQuery('select p from Person p where name = :name', Person.class);
+			query.setParameter('name', name);
+			return (Person) query.getSingleResult();
+		  }
+		 *  
+		 */
 	}
 	
 	private void initEntityManager() {
